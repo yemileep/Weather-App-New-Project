@@ -12,7 +12,9 @@ crossorigin="anonymous"
 </head>
 <body>
     <div class="container">
+    <div class="weather-app-wrapper">
     <div class="weather-app">
+        <div class="overview"></div>
     <h1>
 New York
     </h1>
@@ -26,11 +28,14 @@ New York
     </ul>
 <div class="row">
 <div class="col-6">
+    <div class="clearfix weather-temperature">
     <img
     src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
     alt="Partly Sunny"
+    class="float-left"
     />
-    12 C | F
+   <strong>12</strong> <span class="units"> °C |<a href="#">°F</a>
+    </span>
 </div>
 <div class="col-6">
     <ul>
@@ -46,12 +51,15 @@ New York
     </ul>
 </div>
 </div>
+</div>
+</div>
 <small class="small">
     <a href="https://github.com/yemileep/Vanilla-Weather-App/commit/17c2dbc1367cb83acc6fadc15fb824fb6e5e42d2"
       target="_blank">
       Open source code,</a>
     by Yemilee Prospert
 </small>
+    
 </div>
     <script> src="src/app.js"</script>
 
