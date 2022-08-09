@@ -64,6 +64,10 @@ body{
     .overview {
       margin-bottom: 20px;
     }
+
+    .float-left {
+      float: left;
+    }
     
     .weather-temperature img {
       margin-right: 5px;
@@ -109,4 +113,11 @@ body{
     
     .weather-forecast-temperatures {
       font-size: 13px;
+    }
+    
+    .weather-temperature .active:hover {
+      color:black;
+      cursor:default;
+      text-decoration: none;
+    
     }
