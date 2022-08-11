@@ -1,4 +1,6 @@
-<head>
+
+<!DOCTYPE html>
+<html lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +8,7 @@
 crossorigin="anonymous"
 /> 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<link rel="stylesheet" href="./src/style.css" />
+<link rel="stylesheet" href="style.css" />
     <title>Weather app</title>
 </head>
 <body>
@@ -60,13 +62,32 @@ class="btn btn-primary w-100"
 <div class="col-6">
     <ul>
         <li> Humiditiy: <spand id="humidity"></spand>%</li>
-    
-        <li> Wind: <spand id="wind"></spand> km/h</li>
-    
-    </ul>
+       <li> Wind: <spand id="wind"></spand> km/h</li>
+     </ul>
 </div>
 </div>
-<div class="weather-forecast" id="forecast"></div>
+<div class="weather-forecast">
+<div class="row">
+<div class="col-2">
+   <div class="weather-forecast-date">
+Thu
+</div> 
+<img src="http://openweathermap.org/img/wn/03d@2x.png"
+alt=""
+width="42"
+
+/>
+<div class="weather-forecast-temperatures">
+    <span class="weather-forecast-temperature-max">
+        18
+    </span>
+<span class="weather-forecast-temperature-min">
+    12
+</span> 
+</div>
+</div>
+</div>
+</div>
 </div>
 <small class="small">
     <a href="https://github.com/yemileep/Vanilla-Weather-App/commit/17c2dbc1367cb83acc6fadc15fb824fb6e5e42d2"
